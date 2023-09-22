@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$bg-color: rgb(148, 228, 114);
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin common($var){
+    color: black;
+    font-size: $var;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+    @include flexbox;
+
+    .title{
+        h1{ 
+            @include common(10rem);
+            border-radius: 10px;   
+            transition: all .2s;
+            &:hover{
+                background-color: black;
+                color: $bg-color;
+            }
+            
+        } 
+    }
+    p{
+        @include common(6rem);
+    }
+}
