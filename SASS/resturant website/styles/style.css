@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aqua;
+  height: 70px;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.navbar .nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+.navbar .nav_links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
