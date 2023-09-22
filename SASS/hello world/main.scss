@@ -3,8 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+// varibles
 
 $bg-color: rgb(148, 228, 114);
+
 @mixin flexbox{
     display: flex;
     align-items: center;
@@ -12,10 +14,14 @@ $bg-color: rgb(148, 228, 114);
     flex-direction: column;
 }
 
+//Mixins
+//parameters
 @mixin common($var){
     color: black;
     font-size: $var;
 }
+
+//Nesting
 
 .header{
     width: 100vw;
@@ -36,6 +42,6 @@ $bg-color: rgb(148, 228, 114);
         } 
     }
     p{
-        @include common(6rem);
+        @include common(3rem+3rem); //operators
     }
 }
