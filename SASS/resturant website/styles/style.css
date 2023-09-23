@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap");
 .navbar {
   display: flex;
@@ -102,7 +104,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 @media screen and (max-width: 940px) {
   .items {
@@ -196,8 +198,92 @@
 }
 
 .services {
-  height: 200px;
-  background-color: aqua;
+  height: 500px;
+  background: rgba(253, 252, 252, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 50px;
+}
+@media screen and (max-width: 940px) {
+  .services {
+    height: auto;
+  }
+}
+.services_title {
+  margin-top: 10px;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 400;
+}
+@media screen and (max-width: 940px) {
+  .services_title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+}
+.services_dash {
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+.services_container {
+  height: auto;
+}
+.services_container_choose {
+  width: 100%;
+}
+.services_container_choose_content {
+  padding: 20px 20px;
+}
+.services_container_choose_content a {
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: green;
+}
+@media screen and (max-width: 940px) {
+  .services_container_choose_content a {
+    font-size: 1.3rem;
+  }
+}
+.services_container_choose_content a i {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: green;
+}
+@media screen and (max-width: 940px) {
+  .services_container_choose_content a i {
+    font-size: 1.3rem;
+  }
+}
+.services_container_choose_content h4 {
+  font-size: 1.3rem;
+  font-family: "Mooli", sans-serif;
+  color: grey;
+  margin-top: 10px;
+}
+@media screen and (max-width: 940px) {
+  .services_container_choose_content h4 {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  margin-top: 70px;
+  width: 100%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 * {

@@ -1,7 +1,85 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import 'media_queries';
 .services{
-    height: 200px;
-    background-color: aqua;
+    height: 500px;
+    background: rgba(253, 252, 252, 0.8);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 50px;
+
+    @include tablet{
+        height: auto;
+    }
+
+    &_title{
+        margin-top: 10px;
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Berkshire Swash", cursive;
+        font-weight: 400;
+
+        @include tablet{
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+        
+    }
+    &_dash{
+        text-align: center;
+        color: black;
+        margin-bottom: 10px;
+    }
+
+    &_container{
+        height: auto;
+        &_choose{
+            width: 100%;
+
+            &_content{
+                padding: 20px 20px;
+            
+
+                a{
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                    font-size: 2rem;
+                    color: $str;
+
+                    @include tablet{
+                        font-size: 1.3rem;
+                    }
+
+                    i{
+                        font-size: 2rem;
+                        margin-right: 10px;
+                        color: $str;
+
+                        @include tablet{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                h4{
+                    font-size: 1.3rem;
+                    font-family: 'Mooli', sans-serif;
+                    color: grey;
+                    margin-top: 10px;
+
+                    @include tablet{
+                        font-size: 1rem;
+                    }
+                }
+            }    
+        }
+    }
     
 }
