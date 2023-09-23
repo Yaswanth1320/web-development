@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import 'media_queries';
+
+.items{
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet{
+        height: auto;
+        margin: 0;
+    }
+
+    &_title{
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Berkshire Swash", cursive;
+        font-weight: 400;
+    }
+    &_dash{
+        text-align: center;
+        color: $green;
+    }
+
+    &_container{
+        height: 500px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include tablet{
+            height: 1500px;
+            flex-direction: column;
+        }
+
+        &_item{
+            width: 300px;
+            height: 400px;
+            border-radius: 5px;
+            position: relative;
+
+            @include tablet{
+                
+            }
+
+            &_image{
+                position:absolute;
+                & img{
+                    filter: drop-shadow(4px 8px 6px grey)
+
+                }
+            }
+            
+        }
+    }
+}
+
+.item1{
+    background-color: #58c56f;
+    & img{
+        transform: translate(-40px,240px);
+    }  
+}
+
+.item2{
+    background-color: #d4bf61;
+    & img{
+        transform: translate(-40px,268px);
+    }
+}
+
+.item3{
+    background-color:#75c3e4 ;
+    & img{
+        transform: translate(-40px,280px);
+    }
+}
