@@ -1,0 +1,102 @@
+@import 'colors';
+@import 'media_queries';
+
+%center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    @extend %center;
+    width: 100%;
+    justify-content: space-between;
+    // background: rgba( 255, 255, 255, 0.7);
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    // backdrop-filter: blur( 0px );
+    // -webkit-backdrop-filter: blur( 0px );
+    // border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(120, 207, 99, 0.7);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-radius: 10px;
+    height: 70px;
+    z-index: 10;
+    position: fixed;
+    
+    @include tablet{
+        padding: 20px 0;
+        display: block;
+        height: 100px
+        
+    }
+
+    @include mobile{
+        height: 200px;
+    }
+    
+
+    &_logo{
+        color: $text;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 25px;
+        
+
+    }
+    &_bars{
+        opacity: 0;
+        @include tablet{
+            color: text;
+            opacity: 1;
+            float: right;
+            padding-right: 10px;
+            font-size: 2rem;
+        }
+    }
+    &_menu{
+        list-style: none;
+        margin-right: 24px;
+
+        @include tablet{
+            margin-top: 7px;
+        }
+        @include mobile{
+            display: flex;
+            flex-direction: column; 
+        }
+
+        &_links{
+            display: inline-block;
+            color: $text;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 0 1rem;
+
+            @include tablet{
+                font-size: 1.3rem;
+                padding-left: 30px;
+                
+            }
+
+            &:hover{
+                background-color: rgba(120, 207, 99, 0.7);
+                color: $inner;
+                transform: translate(-8px,-8px);
+                box-shadow: 8px 8px black;
+                transition: all 0.3s ease;
+            }
+            &:active{
+                background-color: rgba(120, 207, 99, 0.7);
+                color: $inner;
+                transform: translate(4px,4px);
+                box-shadow: none;
+                transition: all 0.3s ease;
+            }
+        }
+
+        
+    }
+
+}
