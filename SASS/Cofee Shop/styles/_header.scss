@@ -1,0 +1,62 @@
+@import 'var';
+
+.header{
+    background: $bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: $border;
+    position: fixed;
+    top: 0%; left: 0%; right: 0%;
+    z-index: 1000;
+
+
+    &_logo{
+        font-size: 3rem;
+        color: #fff;
+
+        i{
+            font-size: 4.5rem;
+            color: $main-colour;
+        }
+    }
+
+    &_navbar{
+
+        &_item{
+            margin :0 1rem;
+            font-size: 1.6rem;
+            color: #fff;
+            transition: all .4s ease-out;
+
+            &:hover{
+                color: $main-colour;
+                border-bottom: 0.1rem solid $main-colour;
+                border-top: 0.1rem solid $main-colour;
+                padding-bottom: 0.4rem;
+                padding-top: 0.4rem;
+
+            }
+        }
+    }
+
+    &_icons{
+
+        .btn{
+            display: none;
+        }
+
+        &_icon{
+            color: #fff;
+            cursor: pointer;
+            font-size: 2.5rem;
+            margin-left: 2rem;
+
+            &:hover{
+                color: $main-colour;
+                
+            }
+        }
+    }
+}

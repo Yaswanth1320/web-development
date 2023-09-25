@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import "var";
+@import "header";
 
 *{
     margin: 0;
@@ -10,8 +12,24 @@
     text-decoration: none;
 }
 
-body
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
 
-h1{
-    color: red;
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+   background: #fff;
+   border-radius: 5rem;
+}
+
+body{
+    background: $bg;
 }
