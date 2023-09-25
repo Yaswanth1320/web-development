@@ -74,6 +74,42 @@
 .header_search_label:hover {
   color: #d3ad7f;
 }
+.header_cart {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 35rem;
+  height: calc(100vh - 9.5rem);
+  background: #fff;
+  padding: 0 1.5rem;
+}
+.header_cart_item {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header_cart_item h3 {
+  font-size: 2rem;
+  color: #13131a;
+  padding-bottom: 0.5rem;
+}
+.header_cart_item .price {
+  font-size: 1.5rem;
+  color: #d3ad7f;
+}
+.header_cart_item .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #13131a;
+}
+.header_cart_item .fa-times:hover {
+  color: #d3ad7f;
+}
 
 * {
   margin: 0;
