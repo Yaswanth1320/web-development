@@ -59,4 +59,35 @@
             }
         }
     }
+
+    &_search{
+        position: absolute;
+        top: 115%; right: 7%;
+        background: #fff;
+        width: 50rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+ 
+        &_input{
+            height: 100%;
+            width: 100%;
+            font-size: 1.6rem;
+            color: $black;
+            padding: 1rem;
+            text-transform: none;
+        }
+        &_label{
+            cursor: pointer;
+            font-size: 2.2rem;
+            margin-right: 1.5rem;
+            color: $black;
+
+            &:hover{
+                color: $main-colour;
+            }
+        }
+    }
 }
