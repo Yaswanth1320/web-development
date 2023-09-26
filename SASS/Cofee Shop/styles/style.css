@@ -260,11 +260,20 @@ section {
 .about_row_content a {
   font-size: 1.5rem;
   padding: 1rem;
-  border-radius: 5px;
   display: inline-block;
   color: #13131a;
   background: #d3ad7f;
   transition: all 0.2s ease-in-out;
+}
+.about_row_content a:hover {
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #ccc;
+  transition: all 0.3s ease;
+}
+.about_row_content a:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+  transition: all 0.3s ease;
 }
 
 * {

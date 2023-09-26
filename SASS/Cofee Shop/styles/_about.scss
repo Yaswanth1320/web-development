@@ -52,11 +52,22 @@
             a{
             font-size: 1.5rem;
             padding: 1rem;
-            border-radius: 5px;
             display:inline-block;
             color: $black;
             background: $main-colour;
             transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: translate(-8px,-8px);
+                box-shadow: 8px 8px #ccc;
+                transition: all 0.3s ease;
+            }
+
+            &:active{
+                transform: translate(4px,4px);
+                box-shadow: none;
+                transition: all 0.3s ease;
+            }
 
             }
         }
