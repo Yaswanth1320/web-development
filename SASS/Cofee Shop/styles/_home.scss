@@ -20,7 +20,7 @@ section{
     background-position: center;
 
     @include tablet{
-        background-position: left;
+        
         justify-content: center;
         text-align: center;
     }
@@ -59,6 +59,12 @@ section{
             display:inline-block;
             color: $black;
             background: $main-colour;
+            transition: all .2s ease-in-out;
+
+            &:hover{
+                background: $black;
+                color: $main-colour;
+            }
         }
     }
 }

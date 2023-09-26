@@ -1,0 +1,64 @@
+
+.about{
+
+    &_heading{
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding-bottom: 3.5rem;
+
+        span{
+            color: $main-colour;
+            text-transform: uppercase;
+        }
+    }
+
+    &_row{
+        display: flex;
+        align-items: center;
+        background: $black;
+        flex-wrap: wrap;
+
+        &_image{
+            flex: 1 1 45rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &_content{
+            flex: 1 1 45rem;
+            padding: 2rem;
+
+            h3{
+                font-size: 3rem;
+                color: #fff;
+
+                i{
+                    color: $main-colour;
+                }
+            }
+
+            p{
+                font-size: 1.6rem;
+                color: #ccc;
+                padding: 1rem 0;
+                line-height: 1.8;
+
+            }
+
+            a{
+            font-size: 1.5rem;
+            padding: 1rem;
+            border-radius: 5px;
+            display:inline-block;
+            color: $black;
+            background: $main-colour;
+            transition: all .2s ease-in-out;
+
+            }
+        }
+    }
+}
