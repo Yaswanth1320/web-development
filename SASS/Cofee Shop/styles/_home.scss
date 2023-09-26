@@ -1,0 +1,64 @@
+@import 'media-queries';
+
+section{
+    padding: 2rem 7%;
+
+    @include tablet{
+        padding: 2rem;
+    }
+}
+
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include tablet{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &_content{
+        max-width: 60rem;
+
+        h3{
+            font-size: 6rem;
+            text-transform: capitalize;
+            color: #fff;
+
+            @include tablet{
+                font-size: 4.5rem;
+                
+            }
+        }
+
+        p{
+            font-size: 2rem;
+            font-weight: lighter;
+            line-height: 1.8;
+            padding: 1rem 0;
+            color: #eee;
+
+            @include tablet{
+                font-size: 1.5rem;
+                
+            }
+        }
+
+        a{
+            font-size: 1.5rem;
+            padding: 1rem;
+            border-radius: 5px;
+            display:inline-block;
+            color: $black;
+            background: $main-colour;
+        }
+    }
+}
