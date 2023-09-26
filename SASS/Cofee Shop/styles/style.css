@@ -12,6 +12,11 @@
   right: 0%;
   z-index: 1000;
 }
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 1.5rm 2rem;
+  }
+}
 .header_logo {
   font-size: 3rem;
   color: #fff;
@@ -20,11 +25,30 @@
   font-size: 4.5rem;
   color: #d3ad7f;
 }
+@media screen and (max-width: 991px) {
+  .header_navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+}
 .header_navbar_item {
   margin: 0 1rem;
   font-size: 1.6rem;
   color: #fff;
   transition: all 0.4s ease-out;
+}
+@media screen and (max-width: 991px) {
+  .header_navbar_item {
+    color: #13131a;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 }
 .header_navbar_item:hover {
   color: #d3ad7f;
@@ -35,6 +59,11 @@
 }
 .header_icons .btn {
   display: none;
+}
+@media screen and (max-width: 991px) {
+  .header_icons .btn {
+    display: inline-block;
+  }
 }
 .header_icons_icon {
   color: #fff;
@@ -77,11 +106,22 @@
 .header_cart {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -100%;
   width: 35rem;
   height: calc(100vh - 9.5rem);
   background: #fff;
   padding: 0 1.5rem;
+}
+.header_cart .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #d3ad7f;
+  cursor: pointer;
 }
 .header_cart_item {
   position: relative;
@@ -89,6 +129,9 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+.header_cart_item img {
+  border-radius: 50%;
 }
 .header_cart_item h3 {
   font-size: 2rem;
@@ -126,6 +169,11 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
 }
 
 html::-webkit-scrollbar {
