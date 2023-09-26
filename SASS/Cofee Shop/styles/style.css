@@ -280,6 +280,9 @@ section {
   transition: all 0.3s ease;
 }
 
+.menu {
+  margin-bottom: 5rem;
+}
 .menu_heading {
   text-align: center;
   color: #fff;
@@ -337,6 +340,37 @@ section {
 }
 .menu_container_box:hover > * {
   color: #13131a;
+}
+
+.product_heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3.5rem;
+}
+.product_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.product_container .box {
+  text-align: center;
+  border: 0.1rem solid rgba(225, 255, 255, 0.3);
+  padding: 2rem;
+}
+.product_container .box_icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 0.1rem solid rgba(225, 255, 255, 0.3);
+  color: #fff;
+  margin: 2rem;
+}
+.product_container .box_icons a:hover {
+  color: #d3ad7f;
 }
 
 * {
