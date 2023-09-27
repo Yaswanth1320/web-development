@@ -1,0 +1,58 @@
+
+
+.footer{
+    background: $black;
+    text-align: center;
+
+    &_share{
+        padding: 1rem 0;
+
+        a{
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: #fff;
+            border: $border;
+            margin: 0.3rem;
+            border-radius: 50%;
+
+            &:hover{
+                background: $main-colour;
+            }
+        }
+    }
+
+    &_links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1rem;
+
+        a{
+            padding: 0.7rem 2rem;
+            color: #fff;
+            border: $border;
+            font-size: 2rem;
+            border-radius: 5px;
+
+            &:hover{
+                background: $main-colour;
+            }
+
+        }
+    }
+
+    &_credits{
+        font-size: 2rem;
+        color: #fff;
+        font-weight: lighter;
+        padding: 1.5rem;
+        border-top: $border;
+
+        span{
+            color: $main-colour;
+        }
+    }
+}
