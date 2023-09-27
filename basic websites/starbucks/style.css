@@ -23,16 +23,17 @@ body{
 }
 
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 7%;
-    height: 70px;
-    top: 0%;
+    position: fixed;
+    top: 0;
     width: 100%;
-    
-}
+    height: 70px;
+    background-color: #fff;
+  }
 
 .header .logo{
     display: flex;
@@ -69,7 +70,7 @@ body{
     border-radius: 40px;
     width: 250px;
     height: 30px;
-    padding-left: 1rem;
+    padding-left: 1rem;                                 
 }
 
 .header .icon a{
@@ -88,15 +89,17 @@ body{
 
 
 
-.alert{
+.alert {
     min-height: 100px;
+    margin-top: 70px;
     background-color: #1e3932;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
+
+  }
+
 .alert .container{
     width: 100%;
     height: 100px;
@@ -123,6 +126,19 @@ body{
 
 .display{
     border: 2px solid red;
+    height: 300px;
+    padding: 1.5rem 4%;
+}
+
+.display h3{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.display .container{
+    background-color:  blue;
+    height: 200px;
 }
 
 
@@ -166,16 +182,21 @@ body{
 
 
 @media only screen and (max-width: 600px){
-    .header .navbar{
+    .header .navbar {
+        background: #fff;
         position: absolute;
         top: 100%;
         right: -100%;
+        /* opacity: 0; */
+        /* transform: translateY(50px); */
         text-align: center;
-    }
+        /* changes made here ⬇️ */
+        transition: 0.4s;
+        height: 100vh;
+        width: 100%;
+      }
 
-    .header .navbar.active{
-         right: 0%;
-    }
+    
 
     .header .navbar a{
         display: block;
@@ -198,3 +219,9 @@ body{
 
 
 }
+
+.active {
+    right: 0 !important;
+    /* opacity: 1; */
+    /* transform: translateY(0px); */
+  }
