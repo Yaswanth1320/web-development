@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Mooli', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    height: 70px;
+    top: 0%;
+    width: 100%;
+    
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header ,logo .img{
+    font-size: 2.5rem;
+        color: green;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: green;
+    transition: all 0.2s ease-out;
+}
+
+.header .navbar a:hover{
+    border-bottom: 2px solid green;
+    padding-bottom: 3px;
+
+}
+
+.header .icon{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header .icon input{
+    border: 2px solid gray;
+    border-radius: 40px;
+    width: 250px;
+    height: 30px;
+    padding-left: 1rem;
+}
+
+.header .icon a{
+    font-size: 2.5rem;
+    color: green;
+}
+
+.header .icon .search{
+    display: none ;
+}
+.header .icon .bars{
+    display: none;
+}
+
+
+
+
+
+.alert{
+    min-height: 100px;
+    background-color: #1e3932;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.alert .container{
+    width: 100%;
+    height: 100px;
+    padding: 0 7% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alert .container h3{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.alert .container a{
+    display: block;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.display{
+    border: 2px solid red;
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header ,logo .img{
+        font-size: 2rem;
+    }
+    .header .navbar a{
+        font-size: 1.7rem;
+    }
+    .header .icon input{
+        display: none;
+    }
+    .header .icon .search{
+        display: block;
+    }
+    .header .icon a{
+        font-size: 1.8rem;
+    }
+
+    .alert .container{
+        padding: 0 2rem;
+    }
+
+    .alert .container h3{
+        font-size: 1.6rem;
+    }
+    .alert .container a{
+        padding: 0.7rem 0.7rem;
+        font-size: 1rem;
+    }
+    
+  }
+
+
+
+@media only screen and (max-width: 600px){
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        text-align: center;
+    }
+
+    .header .navbar.active{
+         right: 0%;
+    }
+
+    .header .navbar a{
+        display: block;
+        width: 10rem;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    
+    .header .icon .bars{
+        display: block;
+    }
+
+    .alert .container{
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+
+
+}
