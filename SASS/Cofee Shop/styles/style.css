@@ -342,6 +342,9 @@ section {
   color: #13131a;
 }
 
+.product {
+  margin-bottom: 8rem;
+}
 .product_heading {
   text-align: center;
   color: #fff;
@@ -391,6 +394,9 @@ section {
   font-size: 2.5rem;
 }
 
+.review {
+  margin-bottom: 8rem;
+}
 .review_heading {
   text-align: center;
   color: #fff;
@@ -425,6 +431,74 @@ section {
   line-height: 1.8;
   color: #ccc;
   padding: 2rem 0;
+}
+.review_container_box .stars i {
+  font-size: 1.5rem;
+  color: #d3ad7f;
+}
+
+.contact_heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3.5rem;
+}
+.contact_heading span {
+  color: #d3ad7f;
+  text-transform: uppercase;
+}
+.contact_row {
+  display: flex;
+  background: #13131a;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contact_row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact_row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact_row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+}
+.contact_row form .input {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #010103;
+  border: 0.1rem solid rgba(225, 255, 255, 0.3);
+}
+.contact_row form .input span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.contact_row form .input input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+.contact_row form .btn {
+  padding: 1.3rem 1.5rem;
+  border-radius: 5px;
+  background: #d3ad7f;
+  transition: all 0.2s ease-in;
+}
+.contact_row form .btn:hover {
+  transform: scale(1.1);
 }
 
 * {

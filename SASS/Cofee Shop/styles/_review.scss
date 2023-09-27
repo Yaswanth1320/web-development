@@ -1,6 +1,7 @@
 
 
 .review{
+    margin-bottom: 8rem;
 
     &_heading{
         text-align: center;
@@ -41,6 +42,14 @@
                 color: #ccc;
                 padding: 2rem 0;
 
+            }
+
+            .stars{
+
+                i{
+                    font-size: 1.5rem;
+                    color: $main-colour;
+                }
             }
         }
     }
