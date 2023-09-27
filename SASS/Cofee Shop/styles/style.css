@@ -363,14 +363,68 @@ section {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
-  font-size: 1.6rem;
-  padding: 0.8rem;
+  font-size: 2rem;
   border: 0.1rem solid rgba(225, 255, 255, 0.3);
   color: #fff;
-  margin: 2rem;
+  margin: 0.3rem;
+  padding: 0.6rem 0.6rem;
 }
 .product_container .box_icons a:hover {
+  background: #d3ad7f;
+}
+.product_container .box_image {
+  padding: 2.5rem 0;
+}
+.product_container .box_content h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.product_container .box_content_stars {
+  padding: 1.5rem;
+}
+.product_container .box_content_stars i {
+  font-size: 1.7rem;
+  color: gold;
+}
+.product_container .box_content .price {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.review_heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 3.5rem;
+}
+.review_heading span {
   color: #d3ad7f;
+  text-transform: uppercase;
+}
+.review_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.review_container_box {
+  border: 0.1rem solid rgba(225, 255, 255, 0.3);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.review_container_box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+.review_container_box .user {
+  border-radius: 50%;
+}
+.review_container_box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 2rem 0;
 }
 
 * {

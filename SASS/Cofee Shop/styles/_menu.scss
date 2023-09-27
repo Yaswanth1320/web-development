@@ -101,16 +101,44 @@
                     height: 5rem;
                     width: 5rem;
                     line-height: 5rem;
-                    font-size: 1.6rem;
-                    padding: 0.8rem;
+                    font-size: 2rem;
                     border: $border;
                     color: #fff;
-                    margin: 2rem;
+                    margin: .3rem;
+                    padding: 0.6rem 0.6rem;
 
                     &:hover{
-                        color: $main-colour;
+                        background: $main-colour;
                     }
                 }
+            }
+
+            &_image{
+                padding: 2.5rem 0;
+            }
+
+            &_content{
+
+                h3{
+                    color: #fff;
+                    font-size: 2.5rem;
+                }
+
+                &_stars{
+                    padding: 1.5rem;
+
+                    i{
+                        font-size: 1.7rem;
+                        color: gold;
+                    }
+                }
+
+                .price{
+                    color: #fff;
+                    font-size: 2.5rem;
+                    
+                }
+
             }
         }
     }
