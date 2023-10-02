@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.meme-container{
+    margin: 3rem;
+    text-align: center;   
+}
+
+.meme-container img{
+    margin: 20px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.meme-container .generate-meme-btn{
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    border: none;
+    margin: 24px 0;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.meme-container .generate-meme-btn:hover{
+    border: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+}
+
+.meme-container .about-author{
+    margin: 20px;
+}
