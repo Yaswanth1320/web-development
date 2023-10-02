@@ -81,4 +81,36 @@ form{
     display: block;
     padding: 10px;
     text-transform: capitalize;
+    color: black;
+}
+
+#more-btn{
+    width:80px ;
+    padding: 9px 9px;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    display: none;
+}
+
+#more-btn:hover{
+    background-color: gray;
+    color: antiquewhite;
+}
+
+@media screen and (max-width:768px) {
+    .results{
+        width: 45%;
+
+    }
+}
+@media screen and (max-width:480px) {
+    .results{
+        width: 100%;
+        
+    }
 }
