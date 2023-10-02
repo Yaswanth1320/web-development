@@ -1,4 +1,4 @@
-const apiKey = "zwTrPVObICzZk2HzPTA0s9rTwU7vpTX-WzEZ_WgtGYo";
+const apiKey = "";
 
 const form = document.querySelector("form");
 const inputValue = document.getElementById("search");
@@ -41,6 +41,6 @@ async function serachImages(){
     page++;
     if (page > 1){
         more.style.display = "block";
-        
+
     }
 }
