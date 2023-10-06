@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for item .." id="search-input" onkeyup="search()">
+        </form>
+
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="./images/pro1.webp" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>Tshirts for men</h3>
+                    <h4>20$</h4>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/hoodie.jpeg" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>Hoodie fashion</h3>
+                    <h4>10$</h4>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/sneakers1.avif" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>Addidas Sneakers</h3>
+                    <h4>12.4$</h4>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/shirt.webp" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>shirts for men</h3>
+                    <h4>20$</h4>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/hoddie2.webp" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>Hoodies for men</h3>
+                    <h4>20$</h4>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/sneaker2.avif" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>Sneakers for men</h3>
+                    <h4>20$</h4>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/sneakers3.avif" height="70px" width="70px" alt="product">
+                <div class="details">
+                    <h3>Sneakers for men</h3>
+                    <h4>20$</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
