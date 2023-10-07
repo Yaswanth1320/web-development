@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h2>Images Filter</h2>
+        <div class="buttons">
+            <a href="#" class="btn" id="btn" data-filter="all">All</a>
+            <a href="#" class="btn" id="btn" data-filter="sea">Sea Images</a>
+            <a href="#" class="btn" id="btn" data-filter="sunset">Sunset Images</a>
+            <a href="#" class="btn" id="btn" data-filter="space">Space Iamges</a>
+        </div>
+
+        <div class="item-container" id="items">
+            <div class="item sunset" id="item">
+                <img src="./images/sunset1.jpeg" alt="item" class="item-img">
+            </div>
+
+            <div class="item sea" id="item">
+                <img src="./images/sea1.avif" alt="item" class="item-img">
+            </div>
+
+            <div class="item space" id="item">
+                <img src="./images/space1.jpeg" alt="item" class="item-img">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
