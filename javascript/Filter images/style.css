@@ -20,6 +20,7 @@ body{
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    width: 90%;
 }
 
 h2{
@@ -28,5 +29,44 @@ h2{
 }
 
 .buttons{
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.buttons a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 1.5rem;
+    background-color: green;
+    color: white;
+    padding: 8px 22px;
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 4.5rem ;
+
+}
+
+.item{
+    padding: 0.8rem;
     
+}
+
+.item img{
+    box-shadow: 7px 7px 20px rgba(0, 0,0, 0.2);
+}
+
+@media screen and (max-width:991px) {
+    .item img{
+        height: 500px;
+        width: 600px;
+    }
 }
