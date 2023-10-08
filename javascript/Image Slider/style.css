@@ -12,12 +12,20 @@ body{
 .img-container{
     width: 60%;
     height: 80vh;
-    background: url("images/1.jpg") center/cover fixed no-repeat;
     border-radius: 0.5rem;
     position: relative;
     margin: 4rem auto;
     box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.6);
     border: 5px solid wheat;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    background-size: center/cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 
 .btn-left{

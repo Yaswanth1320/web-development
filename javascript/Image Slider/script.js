@@ -1,11 +1,9 @@
 (function(){
     const pictures = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6'
+        "1",
+        "2",
+        "3",
+        "4"
     ];
 
     const buttons = document.querySelectorAll(".btn");
@@ -19,7 +17,7 @@
                 if(counter < 0){
                     counter = pictures.length - 1;
                 }
-                imgContainer.style.background = `url('img/${pictures[counter]}.jpg')`;
+                image.src = `images/${pictures[counter]}.jpg`;
             }
 
             if(button.classList.contains('btn-right')){
@@ -27,7 +25,7 @@
                 if(counter > pictures.length - 1){
                     counter = 0;
                 }
-                imgContainer.style.background = `url('img/${pictures[counter]}.jpg')`;
+                image.src = `images/${pictures[counter]}.jpg`;
             }
         })
     })
