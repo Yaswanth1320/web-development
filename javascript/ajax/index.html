@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">get user</button><br><br>
+    <button id="button1">get users</button>
+    <h2>user</h2>
+    <div id="demo1"></div>
+    <h2>users</h2>
+    <div id="demo2"></div>
+
+    <script>
+        document.getElementById("button1").addEventListener("click", loadUser);
+
+        function loadUser(){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET','samples.json', true);
+
+            xhr.onload = function(){
+                if(this.status == 200){
+                    var user = JSON.parse(this.responseText);
+
+                    var output= '';
+                    for(i in user){
+                    output += '<ul>' +
+                        '<li>ID: '+user[i].id+' </li>' +
+                        '<li>Name: '+user[i].name+' </li>' +
+                        '<li>Email: '+user[i].email+' </li>' +
+                        '</ul>';
+                    }
+                    document.getElementById("demo2").innerHTML = output;
+            
+                }
+            }
+
+            xhr.send();
+        } 
+    </script>
+</body>
+</html>
+
+
