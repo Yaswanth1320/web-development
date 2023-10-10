@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(63,94,251);
+    background: linear-gradient(172deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 83%);
+    padding: 10px;
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 8px;
+}
+
+.todo-list h2{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color: #002765;
+}
+
+.todo-list img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e9eaec;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    padding: 2px;
+}
+
+.form input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.form button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ee4330;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    position: relative;
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+.cheaked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.cheaked::before{
+    background-image: url("images/checked.png");
+}
