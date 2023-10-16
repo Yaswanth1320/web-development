@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(126deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 64%, rgba(252,176,69,1) 100%);
+}
+
+.container{
+    width: 1300px;
+    min-height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(126deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 64%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    margin: 2% 4%;
+    padding-left: 8%;
+    padding-top: 4%;
+
+    &-image{
+        position: absolute;
+        transform: translate(600px,67px);
+        img{
+            border-radius: 8px;
+        }
+    }
+
+    &-title{
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 600;
+
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    button{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background: rgb(45,253,240);
+        background: linear-gradient(302deg, rgba(45,253,240,1) 16%, rgba(45,63,253,1) 95%);
+        color: #fff;
+        padding: 13px 23px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+
+        i{
+            font-size: 25px;
+            margin-right: 8px;
+        }
+    }
+
+    &-note{
+
+        &-input{
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            min-height: 150px;
+            background: white;
+            color: black;
+            padding: 20px;
+            outline: none;
+            border-radius: 8px;
+            margin: 20px 0;
+
+            img{
+                width: 25px;
+                
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(126deg, rgb(131, 58, 180) 18%, rgb(253, 29, 29) 64%, rgb(252, 176, 69) 100%);
+}
+
+.container {
+  width: 1300px;
+  min-height: 100vh;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(126deg, rgb(131, 58, 180) 18%, rgb(253, 29, 29) 64%, rgb(252, 176, 69) 100%);
+  color: #fff;
+  margin: 2% 4%;
+  padding-left: 8%;
+  padding-top: 4%;
+}
+.container-image {
+  position: absolute;
+  transform: translate(600px, 67px);
+}
+.container-image img {
+  border-radius: 8px;
+}
+.container-title {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.container-title img {
+  width: 80px;
+  height: 80px;
+}
+.container button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(45, 253, 240);
+  background: linear-gradient(302deg, rgb(45, 253, 240) 16%, rgb(45, 63, 253) 95%);
+  color: #fff;
+  padding: 13px 23px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+.container button i {
+  font-size: 25px;
+  margin-right: 8px;
+}
+.container-note-input {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  background: white;
+  color: black;
+  padding: 20px;
+  outline: none;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.container-note-input img {
+  width: 25px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
