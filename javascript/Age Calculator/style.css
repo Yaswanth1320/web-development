@@ -1,7 +1,88 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Yatra+One&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Marcellus', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    color: #333;
+    padding: 10px;
+    background: rgb(45,253,240);
+    background: linear-gradient(302deg, rgba(45,253,240,1) 16%, rgba(253,121,45,1) 87%);
+}
+
+.container .calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.container .calculator h1{
+    font-size: 60px;
+}
+
+.container .calculator span{
+    color: antiquewhite;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255,0.3);
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+
+}
+
+.input-box input{
+    flex: 1;
+    font-size: 18px;
+    position: relative;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border-radius: 5px;
+}
+
+.input-box button{
+    border: none;
+    outline: none;
+    padding: 17px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+
+.input-box button:hover{
+    background: rgb(45,253,240);
+    background: linear-gradient(302deg, rgba(45,253,240,1) 16%, rgba(253,121,45,1) 87%);
+}
+
+/* .input-box input::-webkit-cal{
+    top: 0%;
+    right: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+} */
+
+
+.result{
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
 }
