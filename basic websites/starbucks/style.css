@@ -1,227 +1,365 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    font-family: 'Mooli', sans-serif;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-html{
-    font-size: 62.5%;
+body {
     overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
 }
 
-body{
-    background: #fff;
-}
-
-
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    background-color: #fff;
-  }
+    width: 90%;
+    margin: 10px auto;
+}
 
-.header .logo{
+header .left-side a img {
+    width: 80px;
+}
+
+header .right-side {
     display: flex;
-    align-items: center;
-    gap: 1rem;
 }
 
-.header ,logo .img{
-    font-size: 2.5rem;
-        color: green;
-}
-
-.header .navbar a{
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    color: green;
-    transition: all 0.2s ease-out;
-}
-
-.header .navbar a:hover{
-    border-bottom: 2px solid green;
-    padding-bottom: 3px;
-
-}
-
-.header .icon{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.header .icon input{
-    border: 2px solid gray;
-    border-radius: 40px;
-    width: 250px;
-    height: 30px;
-    padding-left: 1rem;                                 
-}
-
-.header .icon a{
-    font-size: 2.5rem;
-    color: green;
-}
-
-.header .icon .search{
-    display: none ;
-}
-.header .icon .bars{
-    display: none;
-}
-
-
-
-
-
-.alert {
-    min-height: 100px;
-    margin-top: 70px;
-    background-color: #1e3932;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-.alert .container{
-    width: 100%;
-    height: 100px;
-    padding: 0 7% ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.alert .container h3{
-    font-size: 2rem;
-    color: #fff;
-    font-weight: lighter;
-}
-
-.alert .container a{
-    display: block;
-    border: 1px solid white;
-    padding: 1rem 1rem;
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 20px;
-}
-
-.display{
-    border: 2px solid red;
-    height: 300px;
-    padding: 1.5rem 4%;
-}
-
-.display h3{
+header .right-side .nav-link-wrapper a {
+    padding: 10px 25px;
+    margin: 10px;
+    text-decoration: none;
     color: black;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+
+    transition: all .2s ease-in-out;
 }
 
-.display .container{
-    background-color:  blue;
-    height: 200px;
+header .right-side .nav-link-wrapper a:hover{
+    background-color: green;
+    color: white;
+}
+
+.container {
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.container .left-side {
+    text-align: center;
+}
+
+.container .left-side h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
 }
 
 
+.container .left-side h1 .green {
+    color: green;
+    font-family: 'Viga', serif;
+}
 
+.container .left-side p {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
 
+.container .left-side a {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: 1px solid green;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all .2s ease-out;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
 
-@media only screen and (max-width: 991px) {
-    .header{
-        padding: 1.5rem 2rem;
+.container .left-side a:hover{
+    background: transparent;
+    color: black;
+}
+
+.container .right-side {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container .right-side img {
+    max-width: 50%;
+}
+
+.container .right-side .box {
+    position: absolute;
+    display: grid;
+    right: 0%;
+    bottom: 0%;
+}
+
+.container .right-side .box img {
+    width: 25px;
+    margin: 10px;
+}
+
+.container .right-side .box img.facebook {
+    width: 18.5px;
+}
+
+.thumb {
+    display: flex;
+    margin-top: -60px;
+    justify-content: center;
+}
+
+.thumb a:hover {
+    margin-top: -15px;
+    transition: 0.2s;
+}
+
+.thumb img {
+    width: 54px;
+    margin: 20px;
+}
+
+@media (min-width: 1140px) {
+    * {
+        margin: 0px;
+        padding: 0px;
     }
-    .header ,logo .img{
-        font-size: 2rem;
-    }
-    .header .navbar a{
-        font-size: 1.7rem;
-    }
-    .header .icon input{
-        display: none;
-    }
-    .header .icon .search{
-        display: block;
-    }
-    .header .icon a{
-        font-size: 1.8rem;
+
+    body {
+        overflow-x: hidden;
     }
 
-    .alert .container{
-        padding: 0 2rem;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 10px auto;
     }
 
-    .alert .container h3{
-        font-size: 1.6rem;
+    header .left-side a img {
+        width: 80px;
     }
-    .alert .container a{
-        padding: 0.7rem 0.7rem;
-        font-size: 1rem;
+
+    header .right-side {
+        display: flex;
     }
-    
-  }
 
-
-
-@media only screen and (max-width: 600px){
-    .header .navbar {
-        background: #fff;
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        /* opacity: 0; */
-        /* transform: translateY(50px); */
-        text-align: center;
-        /* changes made here ⬇️ */
-        transition: 0.4s;
-        height: 100vh;
-        width: 100%;
-      }
-
-    
-
-    .header .navbar a{
-        display: block;
-        width: 10rem;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
+    header .right-side .nav-link-wrapper a {
+        padding: 10px;
+        margin: 10px;
         text-decoration: none;
+        color: black;
     }
-    
-    .header .icon .bars{
+
+    .container {
+        max-width: 90%;
+        margin: 50px auto;
+        display: flex;
+    }
+
+    .container .left-side {
+        text-align: left;
+        flex: 1;
+    }
+
+    .container .left-side h1 {
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
+    .container .left-side h1 .green {
+        color: green;
+        font-family: 'Viga', serif;
+    }
+
+    .container .left-side p {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .container .left-side a {
+        display: inline-block;
+        background: green;
+        padding: 12px 18px 12px 18px;
+        text-decoration: none;
+        border-radius: 25px;
+        color: white;
+        margin-top: 15px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .container .right-side {
+        flex: 1;
+        text-align: center;
+    }
+
+    .container .right-side img {
+        width: 330px;
+        margin-left: 150px;
+        margin-top: -30px;
+    }
+
+    .container .right-side .box {
+        display: grid;
+        position: absolute;
+        bottom: 40%;
+        right: 1%;
+    }
+
+    .container .right-side .box img {
+        width: 25px;
+        margin: 10px;
+    }
+
+    .container .right-side .box img.facebook {
+        width: 18.5px;
+    }
+
+    .thumb {
+        position: absolute;
+        bottom: 0%;
+        left: 40%;
+    }
+
+    .thumb a:hover {
+        margin-top: -15px;
+        transition: 0.2s;
+    }
+
+    .thumb img {
+        width: 54px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    header {
         display: block;
     }
 
-    .alert .container{
-        justify-content: space-around;
-        flex-direction: column;
-        
+    header .left-side a img {
+        width: 80px;
+        margin: auto;
+        display: block;
     }
 
+    header .right-side {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
 
+    header .right-side .nav-link-wrapper a {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 50px auto;
+    }
+
+    .container .left-side {
+        text-align: center;
+    }
+
+    .container .left-side h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+    .container .left-side h1 .green {
+        color: green;
+        font-family: 'Viga', serif;
+    }
+
+    .container .left-side p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+
+    .container .left-side a {
+        display: inline-block;
+        background: green;
+        padding: 12px 18px 12px 18px;
+        text-decoration: none;
+        border-radius: 25px;
+        color: white;
+        margin-top: 15px;
+        font-size: 16.2px;
+        font-weight: bold;
+    }
 }
 
-.active {
-    right: 0 !important;
-    /* opacity: 1; */
-    /* transform: translateY(0px); */
-  }
+@media only screen and (max-width: 404px) {
+    header {
+        display: block;
+    }
+
+    header .left-side a img {
+        width: 80px;
+        margin: auto;
+        display: block;
+    }
+
+    header .right-side {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    header .right-side .nav-link-wrapper a {
+        padding: 5px;
+        margin: 5px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .container .right-side img {
+        width: 330px;
+        margin-top: -30px;
+    }
+
+    .container .right-side img {
+        max-width: 50%;
+    }
+
+    .container .right-side .box {
+        display: none;
+        position: absolute;
+        bottom: 250px;
+        right: 25px;
+    }
+
+    .container .right-side .box img {
+        width: 25px;
+        margin: 10px;
+    }
+
+    .container .right-side .box img.facebook {
+        width: 18.5px;
+    }
+
+    .thumb {
+        display: flex;
+        margin-top: -30px;
+        justify-content: center;
+    }
+
+    .thumb a:hover {
+        margin-top: -15px;
+        transition: 0.2s;
+    }
+
+    .thumb img {
+        width: 45px;
+        margin: 20px;
+    }
+}

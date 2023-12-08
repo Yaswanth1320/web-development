@@ -1,56 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Starbucks Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-
-    <section class="header">
-       <div class="logo">
-        <a href="#" class="img">
-            <img src="images/logo.png" height="50px" width="50px" alt="logo"></a>
-        <h5>Starbucks</h5>
-       </div>
-        <nav class="navbar">
-            <a href="#" class="header_navbar_item">Home</a>
-            <a href="#" class="header_navbar_item">About</a>
-            <a href="#" class="header_navbar_item">Menu</a>
-            <a href="#" class="header_navbar_item">Products</a>
-        </nav>
-
-        <div class="icon">
-            <input type="text" name="search" class="sch" placeholder="search here">
-            <a href="#" class="search"><i class="fas fa-search"></i></a>
-            <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
-            <a href="#" class="bars" id="menu-btn"><i class="fas fa-bars"></i></a>
+    <header>
+        <div class="left-side">
+            <a href="#"> <img src="img/logo.png" alt=""> </a>
         </div>
-    </section>
-
-
-    <section class="alert">
-        <div class="container">
-                <h3>Avail benefits! Sign up for My Starbucks Rewards.</h3>
-                <a href="#">Know More</a>
+        <div class="right-side">
+            <div class="nav-link-wrapper"> <a href="">Home</a> </div>
+            <div class="nav-link-wrapper"> <a href="">Menu</a> </div>
+            <div class="nav-link-wrapper"> <a href="">What's New</a> </div>
+            <div class="nav-link-wrapper"> <a href="">Contact</a> </div>
         </div>
-    </section>
+    </header>
 
-    <div class="display">
-        <h3><strong>Handcrafted Curations</strong></h3>
-        <div class="container">
-            <div class="item">
-                <img src="" height="50px" width="50px" alt="item">
+    <div class="container">
+
+        <div class="left-side">
+            <h1>It's not just Coffee <br>
+                It's <span class="green"> Starbucks </span>
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+                sunt cumque pariatur sint dignissimos odio sit facilis porro veritatis
+                earum itaque similique voluptatem dolores est ipsum, sequi non temporibus,
+                quae.</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="right-side">
+            <img src="img/img1.png" alt="" class="starbucks">
+            <div class="box">
+                <a href="#"> <img class="facebook" src="img/facebook.png" alt=""></a>
+                <a href="#"> <img src="img/instagram.png" alt=""></a>
+                <a href="#"> <img src="img/twitter.png" alt=""></a>
             </div>
         </div>
     </div>
+    <div class="thumb">
+        <a href="#bottom"><img id="bottom" src="img/thumb1.png" onclick="imgSlider('img/img1.png');"> </a>
+        <a href="#bottom"><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');"> </a>
+        <a href="#bottom"><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');"> </a>
+    </div>
 
-
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
+
 </html>
